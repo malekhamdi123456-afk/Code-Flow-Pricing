@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium',  Arial, sans-serif;
+    background: linear-gradient(90deg, #15154A 0%, #090979 35%, #196675 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+}
+header h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    
+}
+header h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+
+}
+.container >div{
+    border:3px solid #57686edb;
+    height: 25rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+}
+.container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+.container ul{
+    list-style: none;
+    margin-top: 5px;
+}
+.container li {
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.container .checkmark {
+    color: #00d4ff;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.plan-price{
+    margin: 10px 10px;
+}
+.currency {
+    color: #00d4ff;
+    font-size: 20px;
+}
+.price{
+     color: #00d4ff;
+     font-size: 40px;
+}
+.period{
+    color: #a4dfebeb;
+}
+.description{
+    color: #a4dfebeb;
+    font-size: 15px;
+}
+.pro{
+    position: relative;
+    border:2px solid #3ba9d5 !important;
+    box-shadow: 0 0px 10px #3ba9d5;
+    scale: 1.1;
+
+}
+.badge{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 17px;
+    background-color: #3ba9d5;
+    padding: 8px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;   
+}
+.cta-button:hover{
+    cursor: pointer;
+}
+
+.cta-button{
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #00d4ff;
+    border: 2px solid #00d4ff;
+    transition: background-color 0.4s ease;
+
+
+}
+.btn-primary{
+    color: white;
+    background-color: #3ba9d5;
+    border: 2px solid #3ba9d5;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 0 10px #3ba9d5 ;
+}
+.btn-secondary:hover{
+    background-color: #00d5ff36;
+}
+.starter:hover ,.entreprise:hover{
+    border:3px solid #3ba9d5;
+    box-shadow: 0 5px 10px #3ba9d5;
+    transform: scale(1.01);
+}
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    header{
+        scale: 0.95;
+    }
+    .pro{
+        scale: 1.03;
+    }
+    
+}
